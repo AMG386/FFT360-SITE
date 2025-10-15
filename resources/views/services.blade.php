@@ -222,7 +222,7 @@ We offer personalized training programs that provide the focus, guidance, and mo
                 <div class="col-md-4">
                     <div class="gt-text">
                         <i class="fa fa-map-marker"></i>
-                      <p>2nd Floor Five Star Building , Kilimanoor, Thiruvananthapuram<br/>pin:695601</p>
+                      <p>2nd Floor Five Star Building , Kilimanoor, Thiruvananthapuram<br/>pin: 695601</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -294,14 +294,14 @@ We offer personalized training programs that provide the focus, guidance, and mo
                     <div class="fs-widget">
                         <h4>Tips & Guides</h4>
                         <div class="fw-recent">
-                            <h6><a href="#">Physical fitness may help prevent depression, anxiety</a></h6>
+                            <h6><a href="#">Physical fitness may help prevent depression, anxiety.</a></h6>
                             <ul>
                                 <li>3 min read</li>
                                 <li>20 Comment</li>
                             </ul>
                         </div>
                         <div class="fw-recent">
-                            <h6><a href="#">Fitness: The best exercise to lose belly fat and tone up...</a></h6>
+                            <h6><a href="#">Fitness: The best exercise to lose belly fat and tone up.</a></h6>
                             <ul>
                                 <li>3 min read</li>
                                 <li>20 Comment</li>

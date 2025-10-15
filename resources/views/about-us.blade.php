@@ -151,7 +151,7 @@
                     <div class="cs-item">
                         <span class="flaticon-033-juice"></span>
                         <h4>Healthy nutrition plan</h4>
-                        <p>we believe that fitness is more than just exercise – it’s about fueling your body the right way. Our healthy nutrition plans are designed to complement workouts, helping members achieve their goals faster and maintain long-term wellness..</p>
+                        <p>we believe that fitness is more than just exercise – it’s about fueling your body the right way. Our healthy nutrition plans are designed to complement workouts, helping members achieve their goals faster and maintain long-term wellness.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
@@ -390,7 +390,7 @@ we know that no two fitness journeys are the same. That’s why we focus on crea
                 <div class="col-md-4">
                     <div class="gt-text">
                         <i class="fa fa-map-marker"></i>
-                        <p>2nd Floor Five Star Building , Kilimanoor, Thiruvananthapuram<br/>pin:695601</p>
+                        <p>2nd Floor Five Star Building , Kilimanoor, Thiruvananthapuram<br/>pin: 695601</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -462,14 +462,14 @@ we know that no two fitness journeys are the same. That’s why we focus on crea
                     <div class="fs-widget">
                         <h4>Tips & Guides</h4>
                         <div class="fw-recent">
-                            <h6><a href="#">Physical fitness may help prevent depression, anxiety</a></h6>
+                            <h6><a href="#">Physical fitness may help prevent depression, anxiety.</a></h6>
                             <ul>
                                 <li>3 min read</li>
                                 <li>20 Comment</li>
                             </ul>
                         </div>
                         <div class="fw-recent">
-                            <h6><a href="#">Fitness: The best exercise to lose belly fat and tone up...</a></h6>
+                            <h6><a href="#">Fitness: The best exercise to lose belly fat and tone up.</a></h6>
                             <ul>
                                 <li>3 min read</li>
                                 <li>20 Comment</li>

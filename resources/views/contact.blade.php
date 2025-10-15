@@ -140,7 +140,7 @@
                     <div class="contact-widget">
                         <div class="cw-text">
                             <i class="fa fa-map-marker"></i>
-                            <p>2nd Floor Five Star Building , Kilimanoor, Thiruvananthapuram<br/>pin:695601</p>
+                            <p>2nd Floor Five Star Building , Kilimanoor, Thiruvananthapuram<br/>pin: 695601</p>
                         </div>
                         <div class="cw-text">
                             <i class="fa fa-mobile"></i>
@@ -189,7 +189,7 @@
                 <div class="col-md-4">
                     <div class="gt-text">
                         <i class="fa fa-map-marker"></i>
-                        <p>2nd Floor Five Star Building , Kilimanoor, Thiruvananthapuram<br/>pin:695601</p>
+                        <p>2nd Floor Five Star Building , Kilimanoor, Thiruvananthapuram<br/>pin: 695601</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -228,7 +228,7 @@
                         <div class="fa-logo">
                             <a href="#"><img src="img/logo.png" alt=""></a>
                         </div>
-                        <p> we believe fitness is not just about lifting weights – it’s about building a lifestyle of strength, discipline, and balance. Since our establishment in 2020, we have worked hard to create a space where people of all ages and fitness levels can feel motivated and supported..</p>
+                        <p> we believe fitness is not just about lifting weights – it’s about building a lifestyle of strength, discipline, and balance. Since our establishment in 2020, we have worked hard to create a space where people of all ages and fitness levels can feel motivated and supported.</p>
                         <div class="fa-social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -254,14 +254,14 @@
                     <div class="fs-widget">
                         <h4>Tips & Guides</h4>
                         <div class="fw-recent">
-                            <h6><a href="#">Physical fitness may help prevent depression, anxiety</a></h6>
+                            <h6><a href="#">Physical fitness may help prevent depression, anxiety.</a></h6>
                             <ul>
                                 <li>3 min read</li>
                                 <li>20 Comment</li>
                             </ul>
                         </div>
                         <div class="fw-recent">
-                            <h6><a href="#">Fitness: The best exercise to lose belly fat and tone up...</a></h6>
+                            <h6><a href="#">Fitness: The best exercise to lose belly fat and tone up.</a></h6>
                             <ul>
                                 <li>3 min read</li>
                                 <li>20 Comment</li>
