@@ -48,8 +48,10 @@
                             <!-- <li><a href="./team.html">Our Team</a></li> -->
                             <li><a href="./gallery">Gallery</a></li>
                             <li><a href="./blog">Our blog</a></li>
-                            
                             <li><a href="./contact">Contact</a></li>
+                            <li><a href="{{ route('registrations.create') }}">Register</a></li>
+                                        <li><a href="https://admin.fft360.in">Login</a></li>
+                            
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -76,7 +78,7 @@
                 <div class="col-lg-6">
                     <nav class="nav-menu">
                         <ul>
-                           <li><a href="./index">Home</a></li>
+                           {{-- <li><a href="./index">Home</a></li> --}}
                             <li><a href="./about-us">About Us</a></li>
                             <!-- <li><a href="./class-details.html">Classes</a></li> -->
                             <li><a href="./services">Services</a></li>
@@ -85,6 +87,8 @@
                             <li><a href="./blog">Our blog</a></li>
                             
                             <li><a href="./contact">Contact</a></li>
+                            <li><a href="{{ route('registrations.create') }}">Register</a></li>
+                             <li><a href="https://admin.fft360.in">Login</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -273,7 +277,8 @@
                     <div class="bs-text">
                         <h2>registration now to get more deals</h2>
                         <div class="bt-tips">Where health, beauty and fitness meet.</div>
-                        <a href="#" class="primary-btn  btn-normal">Appointment</a>
+                    <a href="{{ route('registrations.create') }}" class="primary-btn btn-normal">Registration</a>
+
                     </div>
                 </div>
             </div>

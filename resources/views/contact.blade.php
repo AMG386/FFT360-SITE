@@ -50,6 +50,7 @@
                             <li><a href="./blog">Our blog</a></li>
                             
                             <li><a href="./contact">Contact</a></li>
+                             <li><a href="https://admin.fft360.in">Login</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -84,7 +85,9 @@
                             <li><a href="./gallery">Gallery</a></li>
                             <li><a href="./blog">Our blog</a></li>
 
-                            <li><a href="./contact">Contact</a></li>
+                            {{-- <li><a href="./contact">Contact</a></li> --}}
+                                       <li><a href="{{ route('registrations.create') }}">Register</a></li>
+                             <li><a href="https://admin.fft360.in">Login</a></li>
                         </ul>
                     </nav>
                 </div>

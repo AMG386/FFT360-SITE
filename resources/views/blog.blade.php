@@ -50,6 +50,7 @@
                             <li><a href="./blog">Our blog</a></li>
                             
                             <li><a href="./contact">Contact</a></li>
+                             <li><a href="https://admin.fft360.in">Login</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -68,7 +69,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="logo">
-                        <a href="./index.html">
+                        <a href="./index">
                             <img src="img/logo.png" alt="">
                         </a>
                     </div>
@@ -82,9 +83,11 @@
                             <li><a href="./services">Services</a></li>
                             <!-- <li><a href="./team.html">Our Team</a></li> -->
                             <li><a href="./gallery">Gallery</a></li>
-                            <li><a href="./blog">Our blog</a></li>
+                            {{-- <li><a href="./blog">Our blog</a></li> --}}
 
                             <li><a href="./contact">Contact</a></li>
+                                       <li><a href="{{ route('registrations.create') }}">Register</a></li>
+                             <li><a href="https://admin.fft360.in">Login</a></li>
                         </ul>
                     </nav>
                 </div>
