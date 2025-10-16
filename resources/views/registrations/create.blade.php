@@ -303,10 +303,10 @@
           <li>FFT360 may adjust fees, plans, or offers without prior notice.</li>
         </ul>
 
-        <h4 class="font-semibold mb-2">8. Conduct & Behavior</h4>
+        <h4 class="font-semibold mb-2">8. Conduct & Behaviour</h4>
         <ul class="list-disc list-inside opacity-90 mb-4">
           <li>Members must show respect towards staff and other members.</li>
-          <li>Abusive language, harassment, or disruptive behavior will result in immediate cancellation of membership.</li>
+          <li>Abusive language, harassment, or disruptive behaviour will result in immediate cancellation of membership.</li>
           <li>The management reserves the right to refuse entry or terminate memberships for misconduct.</li>
         </ul>
 
@@ -322,8 +322,8 @@
         <h4 class="font-semibold mb-2">12. Contact</h4>
         <p class="opacity-90 mb-4">
           For any clarification or disputes, please contact:<br>
-          <strong>Email:</strong> support@fft360.com<br>
-          <strong>Phone:</strong> +91-XXXXXXXXXX
+          <strong>Email:</strong> teamfft360@gmail.com<br>
+          <strong>Phone:</strong> +919778605470,+919946689141,+919778605472
         </p>
 
         <div class="flex justify-end pt-2">
