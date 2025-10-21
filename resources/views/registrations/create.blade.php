@@ -78,7 +78,78 @@
               <label class="block text-sm mb-1">Address</label>
               <textarea id="address" name="address" rows="2"
                         class="w-full border rounded-lg p-2.5 bg-black/40 border-yellow-500/30 text-white fft-focus"
-                        placeholder="Street, City, State, PIN">{{ old('address') }}</textarea>
+                        placeholder="Street Address">{{ old('address') }}</textarea>
+            </div>
+            <div>
+              <label class="fft-label block text-sm mb-1" data-required="*">Country</label>
+              <select required id="country" name="country"
+                      class="w-full border rounded-lg p-2.5 bg-black/40 border-yellow-500/30 text-white fft-focus">
+                <option value="">Select Country</option>
+                <option value="India" @selected(old('country')==='India')>India</option>
+                <option value="United States" @selected(old('country')==='United States')>United States</option>
+                <option value="United Kingdom" @selected(old('country')==='United Kingdom')>United Kingdom</option>
+                <option value="Canada" @selected(old('country')==='Canada')>Canada</option>
+                <option value="Australia" @selected(old('country')==='Australia')>Australia</option>
+                <option value="Germany" @selected(old('country')==='Germany')>Germany</option>
+                <option value="France" @selected(old('country')==='France')>France</option>
+                <option value="Japan" @selected(old('country')==='Japan')>Japan</option>
+                <option value="Other" @selected(old('country')==='Other')>Other</option>
+              </select>
+            </div>
+            <div id="state-container" style="display: none;">
+              <label class="fft-label block text-sm mb-1" data-required="*">State</label>
+              <select id="state" name="state"
+                      class="w-full border rounded-lg p-2.5 bg-black/40 border-yellow-500/30 text-white fft-focus">
+                <option value="">Select State</option>
+                <option value="Andhra Pradesh" @selected(old('state')==='Andhra Pradesh')>Andhra Pradesh</option>
+                <option value="Arunachal Pradesh" @selected(old('state')==='Arunachal Pradesh')>Arunachal Pradesh</option>
+                <option value="Assam" @selected(old('state')==='Assam')>Assam</option>
+                <option value="Bihar" @selected(old('state')==='Bihar')>Bihar</option>
+                <option value="Chhattisgarh" @selected(old('state')==='Chhattisgarh')>Chhattisgarh</option>
+                <option value="Goa" @selected(old('state')==='Goa')>Goa</option>
+                <option value="Gujarat" @selected(old('state')==='Gujarat')>Gujarat</option>
+                <option value="Haryana" @selected(old('state')==='Haryana')>Haryana</option>
+                <option value="Himachal Pradesh" @selected(old('state')==='Himachal Pradesh')>Himachal Pradesh</option>
+                <option value="Jharkhand" @selected(old('state')==='Jharkhand')>Jharkhand</option>
+                <option value="Karnataka" @selected(old('state')==='Karnataka')>Karnataka</option>
+                <option value="Kerala" @selected(old('state')==='Kerala')>Kerala</option>
+                <option value="Madhya Pradesh" @selected(old('state')==='Madhya Pradesh')>Madhya Pradesh</option>
+                <option value="Maharashtra" @selected(old('state')==='Maharashtra')>Maharashtra</option>
+                <option value="Manipur" @selected(old('state')==='Manipur')>Manipur</option>
+                <option value="Meghalaya" @selected(old('state')==='Meghalaya')>Meghalaya</option>
+                <option value="Mizoram" @selected(old('state')==='Mizoram')>Mizoram</option>
+                <option value="Nagaland" @selected(old('state')==='Nagaland')>Nagaland</option>
+                <option value="Odisha" @selected(old('state')==='Odisha')>Odisha</option>
+                <option value="Punjab" @selected(old('state')==='Punjab')>Punjab</option>
+                <option value="Rajasthan" @selected(old('state')==='Rajasthan')>Rajasthan</option>
+                <option value="Sikkim" @selected(old('state')==='Sikkim')>Sikkim</option>
+                <option value="Tamil Nadu" @selected(old('state')==='Tamil Nadu')>Tamil Nadu</option>
+                <option value="Telangana" @selected(old('state')==='Telangana')>Telangana</option>
+                <option value="Tripura" @selected(old('state')==='Tripura')>Tripura</option>
+                <option value="Uttar Pradesh" @selected(old('state')==='Uttar Pradesh')>Uttar Pradesh</option>
+                <option value="Uttarakhand" @selected(old('state')==='Uttarakhand')>Uttarakhand</option>
+                <option value="West Bengal" @selected(old('state')==='West Bengal')>West Bengal</option>
+                <option value="Delhi" @selected(old('state')==='Delhi')>Delhi</option>
+                <option value="Chandigarh" @selected(old('state')==='Chandigarh')>Chandigarh</option>
+                <option value="Dadra and Nagar Haveli and Daman and Diu" @selected(old('state')==='Dadra and Nagar Haveli and Daman and Diu')>Dadra and Nagar Haveli and Daman and Diu</option>
+                <option value="Jammu and Kashmir" @selected(old('state')==='Jammu and Kashmir')>Jammu and Kashmir</option>
+                <option value="Ladakh" @selected(old('state')==='Ladakh')>Ladakh</option>
+                <option value="Lakshadweep" @selected(old('state')==='Lakshadweep')>Lakshadweep</option>
+                <option value="Puducherry" @selected(old('state')==='Puducherry')>Puducherry</option>
+                <option value="Andaman and Nicobar Islands" @selected(old('state')==='Andaman and Nicobar Islands')>Andaman and Nicobar Islands</option>
+              </select>
+            </div>
+            <div>
+              <label class="fft-label block text-sm mb-1" data-required="*">City</label>
+              <input required id="city" name="city" type="text"
+                     class="w-full border rounded-lg p-2.5 bg-black/40 border-yellow-500/30 text-white fft-focus"
+                     value="{{ old('city') }}" placeholder="Enter City">
+            </div>
+            <div>
+              <label class="fft-label block text-sm mb-1" data-required="*">Pincode/ZIP</label>
+              <input required id="pincode" name="pincode" type="text"
+                     class="w-full border rounded-lg p-2.5 bg-black/40 border-yellow-500/30 text-white fft-focus"
+                     value="{{ old('pincode') }}" placeholder="Enter Pincode/ZIP">
             </div>
             <div>
               <label class="fft-label block text-sm mb-1" data-required="*">Mobile Number</label>
@@ -99,6 +170,16 @@
                 <option value="">Select</option>
                 @foreach (['Male','Female','Other','Prefer not to say'] as $g)
                   <option value="{{ $g }}" @selected(old('gender')===$g)>{{ $g }}</option>
+                @endforeach
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm mb-1">Marital Status</label>
+              <select id="marital_status" name="marital_status"
+                      class="w-full border rounded-lg p-2.5 bg-black/40 border-yellow-500/30 text-white fft-focus">
+                <option value="">Select</option>
+                @foreach (['Single','Married','Divorced','Widowed','Separated','Prefer not to say'] as $ms)
+                  <option value="{{ $ms }}" @selected(old('marital_status')===$ms)>{{ $ms }}</option>
                 @endforeach
               </select>
             </div>
@@ -143,6 +224,12 @@
                 @endforeach
               </select>
             </div>
+            <div class="@if(old('has_insurance')!=='Yes') hidden @endif" id="insurance_name_wrap">
+              <label class="block text-sm mb-1" for="insurance_name">Insurance Provider Name</label>
+              <input id="insurance_name" name="insurance_name" type="text"
+                     class="w-full border rounded-lg p-2.5 bg-black/40 border-yellow-500/30 text-white fft-focus"
+                     value="{{ old('insurance_name') }}" placeholder="e.g., HDFC ERGO, Star Health, etc.">
+            </div>
             <div>
               <label class="block text-sm mb-1">Any Health Issue?</label>
               <select id="has_health_issue" name="has_health_issue"
@@ -182,24 +269,19 @@
                      class="w-full border rounded-lg p-2.5 bg-black/40 border-yellow-500/30 text-white fft-focus"
                      value="{{ old('profession_description') }}" placeholder="Role / Company / Shift pattern">
             </div>
-          </div>
-        </section>
-
-        {{-- BUSINESS --}}
-        <section>
-          <h2 class="text-lg font-semibold mb-3" style="color:var(--fft-yellow);">Business (optional)</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
+            
+            {{-- Business fields - shown only when Business is selected --}}
+            <div class="@if(old('profession_type')!=='Business') hidden @endif" id="business_name_wrap">
               <label class="block text-sm mb-1" for="business_name">Business Name</label>
               <input id="business_name" name="business_name" type="text"
                      class="w-full border rounded-lg p-2.5 bg-black/40 border-yellow-500/30 text-white fft-focus"
-                     value="{{ old('business_name') }}" placeholder="If applicable">
+                     value="{{ old('business_name') }}" placeholder="Enter your business name">
             </div>
-            <div class="md:col-span-2">
+            <div class="md:col-span-2 @if(old('profession_type')!=='Business') hidden @endif" id="business_details_wrap">
               <label class="block text-sm mb-1" for="business_details">Business Details</label>
               <textarea id="business_details" name="business_details" rows="3"
                         class="w-full border rounded-lg p-2.5 bg-black/40 border-yellow-500/30 text-white fft-focus"
-                        placeholder="What do you do?">{{ old('business_details') }}</textarea>
+                        placeholder="Describe your business activities">{{ old('business_details') }}</textarea>
             </div>
           </div>
         </section>
@@ -343,6 +425,74 @@
         if (hasIssue.value === 'Yes') issueWrap.classList.remove('hidden');
         else issueWrap.classList.add('hidden');
       });
+    }
+
+    // Insurance name toggle
+    const hasInsurance = document.getElementById('has_insurance');
+    const insuranceNameWrap = document.getElementById('insurance_name_wrap');
+    if (hasInsurance && insuranceNameWrap) {
+      hasInsurance.addEventListener('change', () => {
+        if (hasInsurance.value === 'Yes') {
+          insuranceNameWrap.classList.remove('hidden');
+        } else {
+          insuranceNameWrap.classList.add('hidden');
+          // Clear insurance name when hiding
+          const insuranceNameInput = document.getElementById('insurance_name');
+          if (insuranceNameInput) insuranceNameInput.value = '';
+        }
+      });
+    }
+
+    // Business fields toggle
+    const professionType = document.getElementById('profession_type');
+    const businessNameWrap = document.getElementById('business_name_wrap');
+    const businessDetailsWrap = document.getElementById('business_details_wrap');
+    
+    if (professionType && businessNameWrap && businessDetailsWrap) {
+      professionType.addEventListener('change', () => {
+        if (professionType.value === 'Business') {
+          // Show business fields
+          businessNameWrap.classList.remove('hidden');
+          businessDetailsWrap.classList.remove('hidden');
+        } else {
+          // Hide business fields and clear values
+          businessNameWrap.classList.add('hidden');
+          businessDetailsWrap.classList.add('hidden');
+          
+          // Clear business field values when hiding
+          const businessNameInput = document.getElementById('business_name');
+          const businessDetailsInput = document.getElementById('business_details');
+          if (businessNameInput) businessNameInput.value = '';
+          if (businessDetailsInput) businessDetailsInput.value = '';
+        }
+      });
+    }
+
+    // Country-State dependency
+    const countrySelect = document.getElementById('country');
+    const stateContainer = document.getElementById('state-container');
+    const stateSelect = document.getElementById('state');
+    
+    if (countrySelect && stateContainer && stateSelect) {
+      countrySelect.addEventListener('change', () => {
+        const selectedCountry = countrySelect.value;
+        
+        if (selectedCountry === 'India') {
+          // Show state dropdown for India
+          stateContainer.style.display = 'block';
+          stateSelect.setAttribute('required', 'required');
+        } else {
+          // Hide state dropdown for other countries
+          stateContainer.style.display = 'none';
+          stateSelect.removeAttribute('required');
+          stateSelect.value = ''; // Clear state selection
+        }
+      });
+      
+      // Trigger on page load if country is already selected (for old values)
+      if (countrySelect.value) {
+        countrySelect.dispatchEvent(new Event('change'));
+      }
     }
 
     // Terms modal open/close
