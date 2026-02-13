@@ -46,30 +46,39 @@ class RegistrationController extends Controller
         'business_details' => 'required_if:profession_type,Business|nullable|string',
         'registration_type' => 'required|string|in:Gym Membership,Online Training App Subscription',
         'terms' => 'accepted',
+        'photo' => 'required|image|mimes:jpeg,png|max:5120',
     ]);
 
     // Normalize some fields:
     $validated['terms'] = $request->boolean('terms');  // "on" -> true/1
-    
+
     // Clear state field if country is not India
     if ($validated['country'] !== 'India') {
         $validated['state'] = null;
     }
-    
+
     // Clear insurance name if insurance is not "Yes"
     if ($validated['has_insurance'] !== 'Yes') {
         $validated['insurance_name'] = null;
     }
-    
+
     // Clear business fields if profession is not "Business"
     if ($validated['profession_type'] !== 'Business') {
         $validated['business_name'] = null;
         $validated['business_details'] = null;
     }
-    
+
     // Optional: turn lone "?" into null if your form sometimes sends it
     if (($validated['health_issue_details'] ?? null) === '?') {
         $validated['health_issue_details'] = null;
+    }
+
+    // Handle photo upload
+    if ($request->hasFile('photo')) {
+        $photo = $request->file('photo');
+        $filename = uniqid('photo_').'.'.$photo->getClientOriginalExtension();
+        $path = $photo->storeAs('photos', $filename, 'public');
+        $validated['picture'] = $path;
     }
 
     \App\Models\Registration::create($validated);

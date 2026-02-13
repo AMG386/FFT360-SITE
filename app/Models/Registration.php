@@ -13,7 +13,7 @@ class Registration extends Model
         'first_name','last_name','address','country','state','city','pincode','mobile_number','email','gender',
         'marital_status','dob','height','weight','referred_by','has_insurance','insurance_name','has_health_issue',
         'health_issue_details','profession_type','profession_description',
-        'business_name','business_details','registration_type','terms'
+        'business_name','business_details','registration_type','terms','picture'
     ];
 
     protected $casts = [

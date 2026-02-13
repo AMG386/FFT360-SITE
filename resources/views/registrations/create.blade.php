@@ -55,8 +55,43 @@
     <div class="rounded-2xl p-6 border border-yellow-500/30 bg-[color:var(--fft-black-2)] shadow-[0_0_0_1px_rgba(255,208,0,.05)]">
       <p class="text-sm opacity-80 mb-6">Fields marked with <span class="text-red-400">*</span> are required.</p>
 
-      <form id="clientForm" class="space-y-8" action="{{ route('registrations.store') }}" method="POST" novalidate>
+      <form id="clientForm" class="space-y-8" action="{{ route('registrations.store') }}" method="POST" enctype="multipart/form-data" novalidate>
         @csrf
+        {{-- PHOTO UPLOAD --}}
+        <section>
+          <h2 class="text-lg font-semibold mb-3" style="color:var(--fft-yellow);">Upload Photo</h2>
+          <div class="mb-4">
+            <label class="fft-label block text-sm mb-1" data-required="*">Photo (JPEG/PNG, max 5MB)</label>
+            <input required id="photo" name="photo" type="file" accept="image/jpeg,image/png"
+                   class="w-full border rounded-lg p-2.5 bg-black/40 border-yellow-500/30 text-white fft-focus"
+                   onchange="previewPhoto(event)" />
+            <p class="text-xs text-yellow-300 mt-1">Please upload a clear, good quality photo. Allowed formats: JPEG, PNG. Max size: 5MB.</p>
+            <div id="photo-preview-wrap" class="mt-2">
+              <img id="photo-preview" src="#" alt="Photo Preview" class="hidden rounded-lg max-h-40 border border-yellow-500/30" />
+            </div>
+            @error('photo')
+              <div class="text-red-400 text-xs mt-1">{{ $message }}</div>
+            @enderror
+          </div>
+        </section>
+
+        <script>
+        function previewPhoto(event) {
+          const input = event.target;
+          const preview = document.getElementById('photo-preview');
+          if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+              preview.src = e.target.result;
+              preview.classList.remove('hidden');
+            };
+            reader.readAsDataURL(input.files[0]);
+          } else {
+            preview.src = '#';
+            preview.classList.add('hidden');
+          }
+        }
+        </script>
 
         {{-- CONTACT --}}
         <section>
